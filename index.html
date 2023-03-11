@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Blaka+Ink&family=Oleo+Script+Swash+Caps:wght@700&family=Rubik+Iso&display=swap" rel="stylesheet">
+
+    <title>TIC-TAC-TOE GAME BY SUMAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/icon.png">
+    <style>
+        
+    </style>
+    <script>
+        
+        function voice_fnc(){
+            var voice_suman = new Audio("voice.mp3");
+            voice_suman.play();
+            // alert("suman")
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <h2 style="font-family: 'Rubik Iso', cursive; border-bottom: 1px solid gray; max-width: 400px; cursor: pointer;">TIC-TAC-TOE USING JAVASCRIPT
+        </h2><br>
+        <div class="alert alert-warning" id="turn_msg" role="alert">
+            START THE GAME <strong>PLAYER X</strong>
+        </div>
+        <div class="box_area">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+        </div>
+        <br><br>
+        <div class="alert alert-success" id="win_msg" role="alert">
+            
+        </div>
+        <button type="button" class="btn btn-success" id="reset_btn">
+            <i class="fa-solid fa-rotate-right"></i>&nbsp; RESET
+        </button>
+        <br><br>
+        <div style="font-size: 20px; font-family: 'Permanent Marker', cursive; cursor: pointer;" onclick="voice_fnc()">
+            MADE BY <b>SUMAN</b>😎<br>
+        </div>
+        <div>
+            <i class="fa-solid fa-copyright"></i>&nbsp;2023
+        </div>
+    </div>
+
+    <!--LOGIC -->
+    <script src="app.js"></script>
+</body>
+
+</html>
